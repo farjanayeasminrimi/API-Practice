@@ -4,9 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API, JSON</title>
+    <style>
+      #container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 30px;
+      }
+      .card {
+        padding: 10px 20px;
+        background-color: beige;
+        border-radius: 10px;
+        height: 100%;
+      }
+      .card p {
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
     <button onclick="loadFun()">Load Me</button>
+    <button onclick="addFun()">Click Me</button>
+    <div id="container"></div>
     <script src="./script.js"></script>
+    <script src="./posi.js"></script>
   </body>
 </html>
