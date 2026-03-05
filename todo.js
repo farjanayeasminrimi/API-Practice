@@ -12,6 +12,7 @@ const showToDo = (todos) => {
 
   todos.forEach((todo) => {
     const toDoItem = document.createElement("div");
+    toDoItem.innerHTML = "";
     toDoItem.classList.add("todoItem");
     toDoItem.innerHTML = `
     <p>${todo.completed === true ? `<i class="fa-solid fa-square-check"></i>` : `<i class="fa-regular fa-square-check"></i>`}  </p>
